@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://uhjul7j5hj8f"]
+
+[ext_resource type="Texture2D" uid="uid://5ivm8iwgvy00" path="res://icon.svg" id="1_chc0b"]
+[ext_resource type="Script" uid="uid://duxkgwt2s545t" path="res://character_body_2d.gd" id="1_xna6y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g4v7s"]
+radius = 63.0
+height = 126.0
+
+[node name="Node2D" type="Node2D" unique_id=61876625]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1986771587]
+script = ExtResource("1_xna6y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=260211295]
+shape = SubResource("CapsuleShape2D_g4v7s")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=174889013]
+texture = ExtResource("1_chc0b")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1022526821]
+scale = Vector2(-16.529037, 1.3141265)
+
+[node name="Timer" type="Timer" parent="." unique_id=1922160031]
+wait_time = 3.0

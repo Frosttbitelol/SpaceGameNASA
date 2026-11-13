@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ynbg80bo2b67"]
+
+[ext_resource type="Texture2D" uid="uid://h06b4gyn6owt" path="res://360_F_309045980_zKAgyd8feCR69CMWQ1PlhCHhteODo9zd.jpg" id="1_njr5j"]
+[ext_resource type="PackedScene" uid="uid://uhjul7j5hj8f" path="res://payer.tscn" id="2_rdhbp"]
+
+[node name="LevelTest" type="Node2D" unique_id=1189905173]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1653523521]
+position = Vector2(6, -1)
+scale = Vector2(2.6277778, 2.6277778)
+texture = ExtResource("1_njr5j")
+
+[node name="Node2D" parent="." unique_id=61876625 instance=ExtResource("2_rdhbp")]
+position = Vector2(-13, 4)
